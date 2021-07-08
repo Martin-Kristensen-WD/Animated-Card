@@ -28,7 +28,7 @@ Live view: https://martin-kristensen-wd.github.io/Animated-Card/
 
 I have learned how to create custom properties in CSS and use them in the selectors. 
 
-Code Example: 
+**Code Example:** 
 
 :root {
   --clr-neutral-900: hsl(207, 19%, 9%); 
@@ -40,7 +40,7 @@ Code Example:
 
 I have learned how to created local variables and use the calc() function.
 
-Code Example:
+**Code Example:**
 
 .card-content {
   --padding: 1.5rem; 
@@ -66,7 +66,7 @@ Code Example:
 
 I have learned how to use the * operator to select ALL and the :not() function to not select a selector
 
-Code Example: 
+**Code Example:**
 
 .card-content > *:not(.card-title) {
   opacity: 0;
@@ -78,7 +78,7 @@ Code Example:
 
 I have learned how to use the prefered-reduced-motion if a users have turned off animation on their machine. 
 
-Code Example:
+**Code Example:**
 
 @media (prefers-reduced-motion: reduce) {
   *,
