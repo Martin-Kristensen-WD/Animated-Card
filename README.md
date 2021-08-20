@@ -35,7 +35,7 @@ I have learned how to create custom properties in CSS and use them in the select
 I have learned how to created local variables and use the calc() function.
 
 **Code Example:**
-
+<pre><code>
 .card-content {
   --padding: 1.5rem; 
   padding: var(--padding);
@@ -54,7 +54,7 @@ I have learned how to created local variables and use the calc() function.
   width: calc(100% + var(--padding));
   bottom: 0; 
 }
-
+</code></pre>
 
 ### Learned about operators: * & :not()
 
@@ -62,18 +62,19 @@ I have learned how to use the * operator to select ALL and the :not() function t
 
 **Code Example:**
 
+<pre><code>
 .card-content > *:not(.card-title) {
   opacity: 0;
   transition: opacity 500ms linear;
 }
-
+</code></pre>
 
 ### Learned about prefered-reduced-motion 
 
 I have learned how to use the prefered-reduced-motion if a users have turned off animation on their machine. 
 
 **Code Example:**
-
+<pre><code>
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before, 
@@ -85,7 +86,7 @@ I have learned how to use the prefered-reduced-motion if a users have turned off
     transition-delay: 0ms !important;
   }
 }
-
+</code></pre>
 
 ### Useful resources
 
