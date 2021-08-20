@@ -22,11 +22,12 @@ Live view: https://martin-kristensen-wd.github.io/Animated-Card/
 I have learned how to create custom properties in CSS and use them in the selectors. 
 
 **Code Example:** 
-
+<pre><code>
 :root {
   --clr-neutral-900: hsl(207, 19%, 9%); 
   --clr-neutral-100: hsl(0, 0%, 100%); 
 }
+</code></pre>
 
 
 ### Learned about local variables and calc(). 
