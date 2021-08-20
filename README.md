@@ -2,13 +2,6 @@
 
 Live view: https://martin-kristensen-wd.github.io/Animated-Card/
 
-## Table of contents
-
-  - [Screenshot](#screenshot)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Useful resources](#useful-resources)
-
 
 ## Screenshot
 
