@@ -1,48 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
 :root {
-  --clr-neutral-900: hsl(207, 19%, 9%); 
-  --clr-neutral-100: hsl(0, 0%, 100%); 
-  --clr-accent-400: rgb(66, 245, 132); 
+  --clr-neutral-900: hsl(207, 19%, 9%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-accent-400: hsl(304, 98%, 36%);
 }
 
-*, 
-*::before, 
+*,
+*::before,
 *::after {
   box-sizing: border-box;
 }
 
 body {
-  display: grid; 
+  display: grid;
   min-height: 100vh;
   place-items: center;
-  line-height: 1.6; 
-  background: var(--clr-neutral-900); 
-  font-family: sans-serif;
-  
+  line-height: 1.6;
+  background: var(--clr-neutral-900);
+  font-family: 'Inter', sans-serif;
 }
 
 .card {
-  color: var(--clr-neutral-100); 
-  background-image: url(./images/pc.jpg);
+  color: var(--clr-neutral-100);
+  background-image: url(./images/drawing.jpg);
   background-size: cover;
-  padding: 10rem 0 0; 
+  padding: 10rem 0 0;
   max-width: 35ch; /* ch unit is relative to the width of the 0 character */
   border-radius: 0.5rem;
   overflow: hidden;
-
-    /* Animation */
+  -webkit-box-shadow: 1px 7px 20px 8px hsla(0, 0%, 3%, 0.712);
+  box-shadow: 1px 7px 20px 8px hsla(0, 0%, 3%, 0.712);
+  /* Animation */
   transition: transform 500ms ease-in-out;
 }
 
-.card:hover, .card:focus-within {
+.card:hover,
+.card:focus-within {
   transform: scale(1.05);
 }
-
 
 .card-content {
   --padding: 1.5rem; /* Varible locally scoped to Card */
   padding: var(--padding);
   background: linear-gradient(
-    hsl(0 0% 0% / 0), 
+    hsl(0 0% 0% / 0),
     hsl(0 0% 0% / 1)
   ); /* Hue: 0 Saturation: 0% Ligt: 0% Opacity: /1  */
 }
@@ -50,48 +52,49 @@ body {
 .card-title {
   position: relative;
   width: max-content;
-  
 }
 
 .card-title::after {
-  content: "";
+  content: '';
   position: absolute;
-  height: 3px; 
+  height: 3px;
   background: var(--clr-accent-400);
-  left: calc(var(--padding) * -1); 
+  left: calc(var(--padding) * -1);
   width: calc(100% + var(--padding));
-  bottom: -2px; 
+  bottom: -2px;
 
   /* Animation */
   transform-origin: left;
-  transition: transform 500ms ease-in-out ;
+  transition: transform 500ms ease-in-out;
 }
 
 .card:hover .card-title::after,
 .card:focus-within .card-title::after {
-  transform: scaleX(1); 
+  transform: scaleX(1);
 }
 
 .card-body {
-  color: rgb(255 255 255 / 0.8); 
+  color: rgb(255 255 255 / 0.8);
 }
 
 .button {
   cursor: pointer;
-  display: inline-block; 
-  text-decoration: none; 
-  color: var(--clr-neutral-900); 
+  display: inline-block;
+  text-decoration: none;
+  font-size: 0.9em;
+  color: #fff;
   background-color: var(--clr-accent-400);
-  padding: 0.5em 1.25em; 
+  padding: 0.5em 1.25em;
   border-radius: 0.25rem;
+  transition: ease-in-out 200ms;
 }
 
 @media (hover) {
-  .card-content{
+  .card-content {
     transform: translateY(65%);
     transition: transform 500ms ease-in-out;
   }
-  .card:hover .card-content, 
+  .card:hover .card-content,
   .card:focus-within .card-content {
     transform: translateY(0);
     transition-delay: 500ms;
@@ -113,18 +116,19 @@ body {
   }
 
   .card-title::after {
-    transform: scaleX(0); 
+    transform: scaleX(0);
   }
 }
 
-.button:hover, .button:focus {
-  background-color: var(--clr-neutral-100);
+.button:hover,
+.button:focus {
+  background-color: hsl(304, 89%, 18%);
 }
 
 @media (prefers-reduced-motion: reduce) {
   *,
-  *::before, 
-  *::after{
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
