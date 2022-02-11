@@ -6,7 +6,7 @@ Live view: https://martin-kristensen-wd.github.io/Animated-Card/
 ## Screenshot
 
 ![](./images/1.PNG)
-![](./images/Screenshot (4).png)
+![](./images/Screenshot(4).png)
 
 
 ## Built with
